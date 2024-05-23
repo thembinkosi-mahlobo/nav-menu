@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NavMenu from "./components/Navigation";
+import Speech from "./components/Speech";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div
+          className="colourful-background"
+          backgroundImage='url("/backgroung1.png")'
+        >
+          <Speech />
+          <h1>Navigation Menu</h1>
+          {/* <p></p> */}
+          <NavMenu />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
