@@ -61,29 +61,3 @@ h1 {
 .Link:hover {
   text-decoration: underline;
 }
-
-#transcript {
-  margin-bottom: 1rem;
-  font-size: 1.5;
-}
-
-button {
-  background-color: blueviolet;
-  color: #eee;
-  padding: 0.5 1rem;
-  border: none;
-  border-radius: 0.25rem;
-}
-
-button:hover {
-  background-color: blueviolet;
-  cursor: pointer;
-}
-
-.colourful-background {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-}

@@ -6,67 +6,68 @@ export default function NavMenu() {
     <NavigationMenu.Root className="NavigationMenuRoot">
       <NavigationMenu.List className="NavigationMenuList">
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="NavigationMenuTrigger">
-            Learn
+          <NavigationMenu.Trigger
+            title="Primary Colours"
+            className="NavigationMenuTrigger"
+          >
+            Primary Colours
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List-one">
-              <li href="https://stitches.dev/" title="Stitches">
-                CSS-in-JS with best-in-class developer experience.
-              </li>
-              <li href="/colors" title="Colors">
-                Beautiful, thought-out palettes with auto dark mode.
-              </li>
-              <li href="https://icons.radix-ui.com/" title="Icons">
-                A crisp set of 15x15 icons, balanced and consistent.
-              </li>
+              <NavigationMenu.Link className="Link" href="/red" title="Red">
+                Red
+              </NavigationMenu.Link>
+              <NavigationMenu.Link
+                className="Link"
+                href="/yellow"
+                title="Yellow"
+              >
+                Yellow
+              </NavigationMenu.Link>
+              <NavigationMenu.Link className="Link" href="/blue" title="Blue">
+                Blue
+              </NavigationMenu.Link>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="NavigationMenuTrigger">
-            Overview
+          <NavigationMenu.Trigger
+            title="Secondary Colours"
+            className="NavigationMenuTrigger"
+          >
+            Secondary Colours
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List-two">
-              <li
-                title="Introduction"
-                href="/primitives/docs/overview/introduction"
+              <NavigationMenu.Link className="Link" title="Green" href="/green">
+                Green
+              </NavigationMenu.Link>
+              <NavigationMenu.Link
+                className="Link"
+                title="Orange"
+                href="/orange"
               >
-                Build high-quality, accessible design systems and
-              </li>
-              <li
-                title="Getting started"
-                href="/primitives/docs/overview/getting-started"
+                Orange
+              </NavigationMenu.Link>
+              <NavigationMenu.Link
+                className="Link"
+                title="Purple"
+                href="/purple"
               >
-                A quick tutorial to get you up and running with Radix.
-              </li>
-              <li title="Styling" href="/primitives/docs/guides/styling">
-                Unstyled and compatible with any styling solution.
-              </li>
-              <li title="Animation" href="/primitives/docs/guides/animation">
-                Use CSS keyframes or any animation library of your choice.
-              </li>
-              <li
-                title="Accessibility"
-                href="/primitives/docs/overview/accessibility"
-              >
-                Tested in a range of browsers and assistive technologies.
-              </li>
-              <li title="Releases" href="/primitives/docs/overview/releases">
-                Radix Primitives releases and their changelogs.
-              </li>
+                Purple
+              </NavigationMenu.Link>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
           <NavigationMenu.Link
+            Title="Home"
             className="NavigationMenuLink"
-            href="https://github.com/radix-ui"
+            href="/"
           >
-            Github
+            Home
           </NavigationMenu.Link>
         </NavigationMenu.Item>
 
@@ -75,10 +76,7 @@ export default function NavMenu() {
         </NavigationMenu.Indicator>
       </NavigationMenu.List>
 
-      <div
-        className="Vi
-ewportPosition"
-      >
+      <div className="ViewportPosition">
         <NavigationMenu.Viewport className="NavigationMenuViewport" />
       </div>
     </NavigationMenu.Root>
